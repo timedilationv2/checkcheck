@@ -1,23 +1,40 @@
-baseURL = "https://yourusername.github.io/SuperAi/"
+baseURL = "https://timedilationv2.github.io/checkcheck/"
 languageCode = "en-us"
 title = "SuperAi"
 theme = "PaperMod"
 paginate = 10
 
 [params]
-  description = "AI Research Blog — by Arsalan Khan"
   author = "Arsalan Khan"
+  description = "AI Research Blog — Papers, Thoughts, and Explorations"
   ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  defaultTheme = "auto"  # light, dark, or auto
 
 [menu]
+
   [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts/"
+    name = "Home"
+    url = "/"
     weight = 1
 
   [[menu.main]]
-    identifier = "papers"
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.main]]
     name = "Papers"
     url = "/papers/"
-    weight = 2
+    weight = 3
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Enables raw HTML in Markdown
