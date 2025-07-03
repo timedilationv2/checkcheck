@@ -1,0 +1,23 @@
+baseURL = "https://yourusername.github.io/SuperAi/"
+languageCode = "en-us"
+title = "SuperAi"
+theme = "PaperMod"
+paginate = 10
+
+[params]
+  description = "AI Research Blog — by Arsalan Khan"
+  author = "Arsalan Khan"
+  ShowReadingTime = true
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "papers"
+    name = "Papers"
+    url = "/papers/"
+    weight = 2
