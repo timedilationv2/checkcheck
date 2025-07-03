@@ -10,10 +10,9 @@ paginate = 10
   ShowReadingTime = true
   ShowPostNavLinks = true
   ShowCodeCopyButtons = true
-  defaultTheme = "auto"  # light, dark, or auto
+  defaultTheme = "auto"
 
 [menu]
-
   [[menu.main]]
     name = "Home"
     url = "/"
@@ -37,4 +36,4 @@ paginate = 10
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true  # Enables raw HTML in Markdown
+      unsafe = true
